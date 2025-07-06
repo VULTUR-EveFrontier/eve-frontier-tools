@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+*.pyd
+bin64
+
+# Data directories (large files)
+data/
+
+# Configuration files (contain local paths)
+.eve-frontier-path
+.python312-path
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build outputs
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp 

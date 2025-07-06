@@ -1,0 +1,38 @@
+{
+  "name": "eve-frontier-tools",
+  "version": "1.0.0",
+  "description": "A comprehensive toolkit for extracting, processing, and analyzing EVE Frontier game data",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "pipeline": "node pipeline.js",
+    "setup": "node pipeline.js --steps setup",
+    "extract": "node pipeline.js --steps index,fsdbinary,types,blueprints,stellar",
+    "cleanup": "node pipeline.js --steps cleanup --force",
+    "cleanup:deep": "node pipeline.js --steps cleanup --force --deep",
+    "help": "node pipeline.js --help"
+  },
+  "keywords": [
+    "eve-frontier",
+    "game-data",
+    "data-extraction",
+    "fsdbinary",
+    "ccp-games",
+    "eve-online"
+  ],
+  "author": "EVE Frontier Developer Community",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "python": "3.12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/eve-frontier-tools"
+  },
+  "dependencies": {
+    "pickleparser": "^0.2.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {}
+} 
